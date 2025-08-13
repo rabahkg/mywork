@@ -1,0 +1,92 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: rgb(190, 221, 221);
+ 
+  display: flex;
+  height: 40px;
+  width: 100%;
+ top: 0;
+ left: 0;
+  justify-content: right;
+  align-items: center;
+  position: fixed;
+}
+nav ul {
+  list-style: none;
+  justify-content: right;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+nav ul li {
+  display: inline;
+  padding: 10px;
+  
+  
+}
+nav ul li a {
+  color: darkblue;
+  text-decoration: none;
+}
+body{
+    background-image: url(bbg.jpg);
+    background-size: cover;
+}
+.hyy{
+    margin-top: 100px;
+}
+button{
+            font-size: 9px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            padding: 0.7em 2em;
+            border: 3px solid darkblue;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0 2px 10px black;
+            color: darkblue;
+            text-decoration: none;
+            transition: 0.3s ease all;
+            z-index: 1;
+            
+        }
+        button::before{
+            transform: 0.5 all else;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: '';
+            background-color: darkblue;
+            z-index: -1;
+        }
+        button:hover, button:focus {
+            color: rgb(255, 255, 255);
+        } 
+        button:hover::before, button:focus::before {
+            transition: 0.5s all edge;
+            left: 0;
+            right:0;
+            opacity: 1;
+        }
+        button:active {
+            transform: scale(0.9);
+        }
+.h1{
+font-size: 35px;
+max-width: 250px;
+}
+.hyy{
+  color: white;
+  padding: 60px;
+}
+      
